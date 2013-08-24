@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg">
+
+    <!-- HEADER -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/headerBg">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/createNewTrip"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor = "@android:color/black"/>
+
+    </LinearLayout>
+
+    <!-- TRIP NAME -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/bg"
+                  android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor = "@android:color/black"
+            android:layout_weight="1"
+            android:textSize="25dp"/>
+
+        <EditText
+            android:hint="@string/nameHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tripNameBox"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+
+    <!-- START DATE -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/bg"
+                  android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/startDate"
+            android:textColor = "@android:color/black"
+            android:layout_weight="1"
+            android:textSize="25dp"/>
+
+        <EditText
+            android:hint="@string/startDateHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/startDateBox"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+
+    <!-- END DATE -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/bg"
+                  android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/endDate"
+            android:textColor = "@android:color/black"
+            android:layout_weight="1"
+            android:textSize="25dp"/>
+
+        <EditText
+            android:hint="@string/endDateHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/endDateBox"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+    <!-- TRIP TYPE -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/bg"
+                  android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tripType"
+            android:textColor = "@android:color/black"
+            android:layout_weight="1"
+            android:textSize="25dp"/>
+
+        <EditText
+            android:hint="@string/tripTypeHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tripTypeBox"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirm_trip"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Create Trip"
+        android:onClick="confirmTrip"
+        android:gravity="center_horizontal" />
+
+</LinearLayout>

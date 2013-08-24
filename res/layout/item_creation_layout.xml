@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg"
+              android:gravity="top">
+
+    <!-- HEADER -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/headerBg">
+
+        <TextView
+                android:id="@+id/itemHeader"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/createNewItem"
+                android:textAlignment="center"
+                android:textSize="40dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor = "@android:color/black"/>
+
+    </LinearLayout>
+
+    <!-- TRIP NAME -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/bg"
+                  android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textColor = "@android:color/black"
+                android:layout_weight="1"
+                android:textSize="25dp"/>
+
+        <EditText
+                android:hint="@string/itemNameHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemNameBox"
+                android:layout_weight="3"/>
+
+    </LinearLayout>
+
+
+    <!-- START DATE -->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/bg"
+                  android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity"
+            android:textColor = "@android:color/black"
+            android:textSize="25dp"
+            android:layout_weight="1"/>
+
+        <EditText
+                android:hint="Enter quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemQuantityBox"
+                android:layout_weight="3"/>
+
+    </LinearLayout>
+
+    <!-- END DATE -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/bg"
+                  android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/location_hint"
+                android:textColor = "@android:color/black"
+                android:layout_weight="1"
+                android:textSize="25dp"/>
+
+        <EditText
+                android:hint="Where did you last see it?"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/locationHintBox"
+                android:layout_weight="3"/>
+
+    </LinearLayout>
+
+    <!-- TRIP TYPE -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/bg"
+                  android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/more_info"
+                android:textColor = "@android:color/black"
+                android:layout_weight="1"
+                android:textSize="25dp"/>
+
+        <EditText
+                android:hint="@string/moreInfoHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemInfoBox"
+                android:layout_weight="3"/>
+
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/confirm_trip"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Create"
+            android:onClick="confirmItem"
+            android:gravity="center_horizontal"
+            android:layout_gravity="left"/>
+
+</LinearLayout>

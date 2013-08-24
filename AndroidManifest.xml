@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.algorhythms.infinity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cartoonsuitcase"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" 
+        	android:theme="@android:style/Theme.Holo.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TripsViewActivity"/>
+        <activity android:name=".CreateTripActivity"/>
+        <activity android:name=".ItemViewActivity"/>
+        <activity android:name=".CategoryViewActivity"/>
+        <activity android:name=".CreateItemActivity"/>
+        <activity android:name=".ShareTripsActivity"/>
+        <activity
+            android:name=".DrawerScreenActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".NewCategoryActivity"
+            android:label="@string/title_activity_new_category" >
+        </activity>
+        <activity
+            android:name=".NewItemActivity"
+            android:label="@string/title_activity_new_item" >
+        </activity>
+    </application>
+
+</manifest>
